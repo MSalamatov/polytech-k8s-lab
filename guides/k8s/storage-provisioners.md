@@ -1,5 +1,7 @@
 ## Local-path
 
+Link: https://github.com/rancher/local-path-provisioner
+
 ```ShellSession
 # Install
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
@@ -8,6 +10,8 @@ kubectl patch storageclass local-path -p '{"metadata": {"annotations":{"storagec
 ```
 
 ## Nfs
+
+Link: https://github.com/helm/charts/tree/master/stable/nfs-server-provisioner
 
 ```ShellSession
 # On all nodes!!!

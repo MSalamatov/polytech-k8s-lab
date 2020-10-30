@@ -1,5 +1,7 @@
 ## Kubespray
 
+Link: https://github.com/kubernetes-sigs/kubespray
+
 Python:
 
 ```ShellSession
@@ -31,7 +33,7 @@ sudo nano inventory/mycluster/group_vars/k8s-cluster/addons.yml
 sudo nano inventory/mycluster/group_vars/k8s-cluster/k8s-cluster.yml
 ```
 
-Go:
+Run:
 
 ```ShellSession
 ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml
@@ -41,7 +43,9 @@ ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root c
 --extra-vars "ansible_sudo_pass=passwordk8"
 ```
 
-Kubectl:
+## Kubectl
+
+Link: https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 ```ShellSession
 sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
@@ -55,7 +59,9 @@ sudo cp /etc/kubernetes/admin.conf ~/.kube/config
 sudo chmod +r ~/.kube/config
 ```
 
-Helm:
+## Helm
+
+Link: https://helm.sh/docs/intro/install/
 
 ```ShellSession
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
