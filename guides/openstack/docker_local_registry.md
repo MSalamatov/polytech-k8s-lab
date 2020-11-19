@@ -41,7 +41,7 @@ sudo openssl req -newkey rsa:4096 -x509 -sha256 -nodes -days 365 -out /certs/dom
  * -keyout - we generate the key so we specify an output path
  * -out - path for our certificate
  
-We need to give some info about our organization to fill the certificate 
+We need to give some info about our organization to fill the certificate.
 
 ### 2. Installing a certificate
 After that we will have domain.crt and domain.key in /certs
@@ -76,7 +76,8 @@ sudo service docker reload
 
 ### 3. Configure authentication
 To connect to docker registry we need login and password. We need to create a password file with one entry for the user "user" with password "userpassword". 
-<p>We will create a fictive container and move the output of "htpasswd" tool to /auth/htpasswd. In this file we can find our login and hashed password.</p>
+
+We will create a fictive container and move the output of "htpasswd" tool to /auth/htpasswd. In this file we can find our login and hashed password
 
 ```ShellSession
 sudo mkdir /auth
